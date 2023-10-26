@@ -1,4 +1,8 @@
-resource "aws_instance" "foo" {
-  ami = "abc123"
-  
+variable "foo" {
+  type    = string
+  default = "bar"
+}
+
+output "myoutput" {
+  value = "i am an output"
 }
