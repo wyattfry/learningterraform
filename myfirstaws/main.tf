@@ -15,7 +15,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
+    values = ["bitnami-gitea-1.19.3-1-r03-linux-debian-11-x86_64-hvm-ebs-nami"]
   }
 
   filter {
