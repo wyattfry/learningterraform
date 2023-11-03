@@ -1,3 +1,8 @@
+variable "instance_type" {
+  description = "Type of EC2 instance to provision"
+  default     = "t3.nano"
+}
+
 data "aws_ami" "app_ami" {
   most_recent = true
 
