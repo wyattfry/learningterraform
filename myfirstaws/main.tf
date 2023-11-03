@@ -6,3 +6,7 @@ variable "foo" {
 output "myoutput" {
   value = "i am an output"
 }
+
+resource "aws_instance" "web" {
+  
+}
