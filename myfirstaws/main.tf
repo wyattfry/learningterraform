@@ -1,3 +1,15 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+  region  = "us-west-2"
+}
+
 data "aws_ami" "app_ami" {
   most_recent = true
 
